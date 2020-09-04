@@ -1,14 +1,22 @@
+# Qubo reparaciones
+
+<Ingresar logo> Sistema para gestionar los pedidos de reparaciones con un sistema que permite registrar diferentes técnicos y sucursales.
+Para más detalles consultar la [wiki](https://github.com/qubo-reparaciones/qubo-doc/wiki) del proyecto.
+
+## Para el usuario
+
+Tener en cuenta que hay que configurar el usuario admin, que va a tener el control de los técnicos que se permiten registrar y las sucursales.
+Loguearse por primera vez: `usuario: admin, contraseña: admin`. El sistema debería obligar el cambio de la contraseña. 
+
 ## Para el desarrollador
 
 ### Backend
 
-Si querés contribuír tenés que clonarte el [repositorio de la API](https://github.com/cerveceria-artesanal/enlatada-be).
+Si querés contribuír tenés que clonarte el [repositorio de la API](https://github.com/qubo-reparaciones/qubo-be).
 
 ##### Requerimientos
 - [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - [Gradle](https://gradle.org/install)
-- [Docker](https://docs.docker.com/engine/installation/) 
-- [Docker Compose](https://docs.docker.com/compose/install/) 
 
    
 ##### Ir a la raíz del proyecto
@@ -16,11 +24,7 @@ Si querés contribuír tenés que clonarte el [repositorio de la API](https://gi
 ##### Para rebuildear los mappers 
  
     ./gradlew rebuildMappers 
- 
-##### Levantar la base de datos postgres, con docker-compose  
-    
-    docker-compose up
- 
+  
 ##### Levantar la aplicación local en el puerto 8080
    
     ./gradlew bootRun -Dspring.profiles.active=dev -Dserver.port=8080 "link a la deb"
@@ -28,7 +32,7 @@ Si querés contribuír tenés que clonarte el [repositorio de la API](https://gi
     
 ### Frontend
 
-Si querés contribuír tenés que clonarte el [repositorio del cliente web!](https://github.com/cerveceria-artesanal/enlatada-fe).
+Si querés contribuír tenés que clonarte el [repositorio del cliente web!](https://github.com/qubo-reparaciones/qubo-fe).
 
 ##### Requerimientos
 - [Node](https://nodejs.org/en/)
